@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--(Internet exploror) compitability meta--> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<!--First mobile meta-->
+		<title>Responsive template</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+		<!--<link rel="stylesheet" type="text/css" href="assets/css/montserrat-webfont.min.css">-->
+		<!--<link rel="stylesheet" type="text/css" href="assets/css/open-sans.css">-->
+		<!--<link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.min.css">-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/template.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/default_theme.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/hover-min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<!--Media must be after the main stylesheet to override it-->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<script type="text/javascript" src="assets/js/html5shiv.min.js"></script>
+		<!--used to initialize the HTML5 elements-->
+		<script type="text/javascript" src="assets/js/respond.min.js"></script>
+		<!--Solve the media query problems int internet exploror browser-->
+
+	</head>
+	<body>
+
+
+		<!--Start Section Tool Box-->
+		<section class="option-box">
+			<div class="color-option">
+				<h4>Color Option</h4>
+				<ul class="list-unstyled">
+					<li data-value = "assets/css/default_theme.css"></li>
+					<!--data-value is used to hold the style name and the jquery will make the style with this name-->
+					<li data-value = "assets/css/purple_theme.css"></li>
+					<li data-value = "assets/css/blue_theme.css"></li>
+					<li data-value = "assets/css/yellow_theme.css"></li>
+				</ul>
+			</div>
+			<i class="fa fa-gear fa-3x gear-check"></i>
+		</section>
+		<!--End Section Tool Box-->
+		
+		<!--Start Our Navbar-->
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<!--
+			navbar-inverse is a navbar with other style and has black color
+			navbar-fixed-top is what makes the navbar at the top of the page while scrolling 
+			-->
+			<div class="container">
+				<!--This centers the nabvbar in the page , it has padding 10px left , 15px from the right-->
+				<div class="navbar-header">
+					<!--
+					The navbar-header has two elements 
+					1) The button resposible for opening the navbar in the mobile size
+					2) The logo or the brand name of the website
+					-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ournavbar">
+						<!--data-target means what to open when we click the button-->
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand hvr-pop">Elzero <span>inc.</span></a>
+				</div>
+				<!--Collect the nav links , Forms and other content of toggling-->
+				<div class="collapse navbar-collapse" id="ournavbar">
+
+					<ul class="nav navbar-nav navbar-right">
+						<!--navbar-right class will float the element right-->
+						<li class="active"><a href="#">Home</a></li> <!--This opened by default-->
+						<li><a href="#">About</a></li>
+						<li><a href="#">Company</a></li>
+						<li class="dropdown">
+							<!--dropdown is a link that is clicked to open another ul-->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Programming</a></li>
+								<li><a href="#">Web Dsign</a></li>
+								<li><a href="#">Desktop</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Web Hosting</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Map</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<!--
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					-->
+				</div>
+				<!--End of the contaner-->
+			</div>
+		</nav>
+		<!--End Our Navbar-->
+
+		<!--Start Carousel-->
+		<div id="myslide" class="carousel slide hidden-xs" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#myslide" data-slide-to="0" class="active"></li>
+		    <li data-target="#myslide" data-slide-to="1"></li>
+		    <li data-target="#myslide" data-slide-to="2"></li>
+		    <li data-target="#myslide" data-slide-to="3"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="item active">
+		    	<img src="assets/img/Carousel/01.jpg" width="1920" height="600" alt="PiC-1">
+		    	<div class="carousel-caption hidden-xs">
+		    		<h2 class="h1">Programming</h2>
+		    		<p class="lead">Asynchronous methods and transitionsAll API methods are asynchronous and start a transition. They return to the caller as soon as the transition is started but before it ends. In addition, a method call on a transitioning component will be ignored.</p>
+		    	</div>
+		    </div>
+		    <div class="item">
+		    	<img src="assets/img/Carousel/02.jpg" width="1920" height="600" alt="PiC-2">
+		    	<div class="carousel-caption hidden-xs">
+		    		<h2 class="h1">Web Design</h2>
+		    		<p class="lead">Asynchronous methods and transitionsAll API methods are asynchronous and start a transition. They return to the caller as soon as the transition is started but before it ends. In addition, a method call on a transitioning component will be ignored.</p>
+		    	</div>
+		    </div>
+		    <div class="item">
+		    	<img src="assets/img/Carousel/03.jpg" width="1920" height="600" alt="PiC-3">
+		    	<div class="carousel-caption hidden-xs">
+		    		<h2 class="h1">Desktop</h2>
+		    		<p class="lead">Asynchronous methods and transitionsAll API methods are asynchronous and start a transition. They return to the caller as soon as the transition is started but before it ends. In addition, a method call on a transitioning component will be ignored.</p>
+		    	</div>
+		    </div>
+		    <div class="item">
+		    	<img src="assets/img/Carousel/04.jpg" width="1920" height="600" alt="PiC-4">
+		    	<div class="carousel-caption hidden-xs">
+		    		<h2 class="h1">Web Hosting</h2>
+		    		<p class="lead">Asynchronous methods and transitionsAll API methods are asynchronous and start a transition. They return to the caller as soon as the transition is started but before it ends. In addition, a method call on a transitioning component will be ignored.</p>
+		    	</div>
+		    </div>
+		  </div>
+		  <a class="left carousel-control" href="#myslide" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		  </a>
+		  <a class="right carousel-control" href="#myslide" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		  </a>
+		</div>
+		<!--End Carousel-->
+
+
+		<!--Start about-->
+		<section class="about text-center wow bounceIn" data-wow-duration="2s" data-wow-delay="2s" data-wow-offset="200" data-wow-iteration="3"> 
+			<!--data-wow-offset is the distance between the bottom edge of the page and the element ,so when this distance is reached the element will show else it will be hidden-->  
+			<!--text-center class centers all text within which is equivalent to text-align : center-->
+			<div class="container">
+				<h1>Meet our new template <span>Elzero.Inc</span></h1>
+				<p class="lead">Hello let me introduce our template Elzero.Inc Created with all the love with <strong>Bootstrap</strong> 3.2.0</p> <!--lead class makes the pragraphs look good-->
+			</div>
+		</section>
+		<!--End about-->
+
+		<!--Start section features-->
+
+		<section class="features text-center">
+			<div class="container">
+				<h2 class="h1">Our Features</h2>
+				<div class="row">
+					
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="feat hvr-wobble-vertical wow bounceInLeft" data-wow-duration="2s"  data-wow-offset="200">
+							<span class="glyphicon glyphicon-ok">
+							<h4>100% Responsive</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="feat hvr-wobble-to-bottom-right wow bounceInUp" data-wow-duration="2s"  data-wow-offset="200">
+							<span class="glyphicon glyphicon-thumbs-up">
+							<h4>Retina Ready</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="feat hvr-wobble-to-top-right wow bounceInDown" data-wow-duration="2s"  data-wow-offset="200">
+							<span class="glyphicon glyphicon-eye-open">
+							<h4>Awesome Display</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6">
+						<div class="feat hvr-wobble-vertical wow bounceInRight" data-wow-duration="2s"  data-wow-offset="200">
+							<span class="glyphicon glyphicon-pencil">
+							<h4>Well Documented</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!--End section features-->
+
+		<!--Start testimonials Section-->
+		<section class="testimonials text-center wow flipInY" data-wow-duration="1s"  data-wow-offset="400">
+			<div class="container">
+				<h2 class="h1">What our clients Say</h2>
+			<!--Start Testimonials Carousel-->
+			<div id="carousel_testimonials" class="carousel slide" data-ride="carousel">
+			 
+			  <div class="carousel-inner">
+			    <div class="item active">
+			    	<p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
+			    	<span>Osama Elzero</span>
+			    </div>
+			    <div class="item">
+			    	<p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
+			    	<span>Hassan Zohdy</span>
+			    </div>
+			    <div class="item">
+			    	<p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
+			    	<span>Hind Ragab</span>
+			    </div>
+			    <div class="item">
+			    	<p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
+			    	<span>Zahra Ahmed</span>
+			    </div>
+			  </div>
+			   <ol class="carousel-indicators">
+			    <li data-target="#carousel_testimonials" data-slide-to="0" class="active">
+			    	<img src="assets/img/Testimonials/avatar_01.jpg" alt="Osama">
+			    </li>
+			    <li data-target="#carousel_testimonials" data-slide-to="1">
+			    	<img src="assets/img/Testimonials/avatar_02.jpg" alt="Hassa">
+			    </li>
+			    <li data-target="#carousel_testimonials" data-slide-to="2">
+			    	<img src="assets/img/Testimonials/avatar_03.jpg" alt="Hind">
+			    </li>
+			    <li data-target="#carousel_testimonials" data-slide-to="3">
+			    	<img src="assets/img/Testimonials/avatar_04.jpg" alt="Zahra">
+			    </li>
+			  </ol>
+			</div>
+			<!--End testimonials Carousel-->
+			</div>
+		</section>
+		<!--End testimonials Section-->
+
+
+		<!--Start Section price table -->
+		<section class="price_table text-center">
+			<div class="container">
+				<h2 class="h1">Our Amazing Prices</h2>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<div class="price_box wow fadeInUp" data-wow-duration="2s"  data-wow-offset="400">
+							<h2 class="text-primary">Hosting</h2>
+							<p class="center-block">$40</p> <!--To make the p elemenet displayed as a circle , we must make it at the center and block , so we use center-block class-->
+							<ul class="list-unstyled"> <!--This class is used to cancel all image styles such as list-style : none , padding: 0-->
+								<li>Space : 30GB</li>
+								<li>Emails : 20</li>
+								<li>IPs : 2 IP</li>
+								<li>Dtatbase : 10</li>
+								<li>ftp Accounts : 5</li>
+							</ul>
+							<a href="#" class="btn btn-primary">Order Now</a>
+						</div>	
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<div class="price_box wow fadeInDown" data-wow-duration="2s"  data-wow-offset="400">
+							<h2 class="text-success">VPS</h2>
+							<p class="center-block">$50</p>
+							<ul class="list-unstyled"> <!--This class is used to cancel all image styles such as list-style : none , padding: 0-->
+								<li>Space : 50GB</li>
+								<li>Emails : 40</li>
+								<li>IPs : 5 IP</li>
+								<li>Dtatbase : 20</li>
+								<li>ftp Accounts : 10</li>
+							</ul>
+							<a href="#" class="btn btn-success">Order Now</a>
+						</div>	
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<div class="price_box wow fadeInUp" data-wow-duration="2s"  data-wow-offset="400">
+							<h2 class="text-info">Dedicated</h2>
+							<p class="center-block">$70</p>
+							<ul class="list-unstyled"> <!--This class is used to cancel all image styles such as list-style : none , padding: 0-->
+								<li>Space : 80GB</li>
+								<li>Emails : 40</li>
+								<li>IPs : 8 IP</li>
+								<li>Dtatbase : 30</li>
+								<li>ftp Accounts : 20</li>
+							</ul>
+							<a href="#" class="btn btn-info">Order Now</a>
+						</div>	
+					</div>
+					<div class="col-lg-3 col-sm-6 col-xs-12">
+						<div class="price_box wow fadeInDown" data-wow-duration="2s"  data-wow-offset="400">
+							<h2 class="text-danger">Colud4</h2>
+							<p class="center-block">$90</p>
+							<ul class="list-unstyled"> <!--This class is used to cancel all image styles such as list-style : none , padding: 0-->
+								<li>Space : 90GB</li>
+								<li>Emails : 50</li>
+								<li>IPs : 10 IP</li>
+								<li>Dtatbase : 50</li>
+								<li>ftp Accounts : 50</li>
+							</ul>
+							<a href="#" class="btn btn-danger">Order Now</a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Section price table-->
+
+		<!-- Start Our team-->
+		<section class="our_team text-center">
+			<div class="team">
+				<div class="container">
+					<h2 class="h1">Meet our Awseome Team</h2>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="person wow pulse" data-wow-duration="1s"  data-wow-offset="400">
+								<img src="assets/img/Our_team/chris.jpg" alt="Chris Coyar" class="img-circle"> 
+								<!--It is preferable to choose images with same in square to avoid pixelling when using bootstrap classes-->
+								<h3>Chris Coyer</h3>
+								<p>This is Chris Coyer the owner and founder of the amazing website css-tricks</p>
+								<i class="fa fa-google-plus fa-lg"></i>
+								<i class="fa fa-facebookfa-lg"></i>
+								<i class="fa fa-twitter fa-lg"></i>
+								<i class="fa fa-youtube fa-lg"></i>
+								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="person wow pulse" data-wow-duration="1s"  data-wow-offset="400">
+								<img src="assets/img/Our_team/leah.jpg" alt="Leah Culver" class="img-circle">
+								<h3>Leah Culver</h3>
+								<p>This is amazing hacker woman with a much knowledge of hacking systems</p>
+								<i class="fa fa-google-plus fa-lg"></i>
+								<i class="fa fa-facebookfa-lg"></i>
+								<i class="fa fa-twitter fa-lg"></i>
+								<i class="fa fa-youtube fa-lg"></i>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="person wow pulse" data-wow-duration="1s"  data-wow-offset="400">
+								<img src="assets/img/Our_team/steve.jpg" alt="Steve Jobs" class="img-circle">
+								<h3>Steve Jobs</h3>
+								<p>This is the man who changed the world with his Apple Products</p>
+								<i class="fa fa-google-plus fa-lg"></i>
+								<i class="fa fa-facebookfa-lg"></i>
+								<i class="fa fa-twitter fa-lg"></i>
+								<i class="fa fa-youtube fa-lg"></i>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="person wow pulse" data-wow-duration="1s"  data-wow-offset="400">
+								<img src="assets/img/Our_team/marissa.jpg" alt="Marissa Mayer" class="img-circle">
+								<h3>Marissa Mayer</h3>
+								<p>This is amazing hacker woman with a much knowledge of hacking systems</p>
+								<i class="fa fa-google-plus fa-lg"></i>
+								<i class="fa fa-facebookfa-lg"></i>
+								<i class="fa fa-twitter fa-lg"></i>
+								<i class="fa fa-youtube fa-lg"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Our team-->
+
+		<!--Start Section Subscribe-->
+		<section class="subscribe text-center wow fadeInUp" data-wow-duration="1s"  data-wow-offset="400">
+			<div class="container">
+				<h2 class="h1">Keep in touch</h2>
+				<p class="lead">Sign Up for News Letter .Don't worry about spam we hate it too</p>
+				<form class="form-inline">
+					<input type="email" class="form-control input-lg" placeholder="Enter your Email">
+					<button class="btn btn-danger btn-lg"><i class="fa fa-edit fa-lg"></i>Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<!--End Section Subscribe-->
+
+		<!--Start Statistics Section-->
+		<section class="statistics text-center">
+			<div class="data">
+				<div class="container">
+					<h2 class="h1">Our Main Statistics </h2>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats"> <!--It is preferable to have another div inside the grid system columns to wrap its content and style it-->
+								<i class="fa fa-users fa-5x"></i>
+								<p>9550</p>
+								<span>Satisfied Users</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats"> <!--It is preferable to have another div inside the grid system columns to wrap its content and style it-->
+								<i class="fa fa-comments fa-5x"></i>
+								<p>25650</p>
+								<span>Posted Comments</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats"> <!--It is preferable to have another div inside the grid system columns to wrap its content and style it-->
+								<i class="fa fa-suitcase fa-5x"></i>
+								<p>3260</p>
+								<span>Projects Done!</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats"> <!--It is preferable to have another div inside the grid system columns to wrap its content and style it-->
+								<i class="fa fa-support fa-5x"></i>
+								<p>95350</p>
+								<span>Tickets Archived</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Statistics Section-->		
+
+
+		<!--Start Skills Section-->
+		<section class="our-skills">
+			<div class="container">
+				<h2 class="text-center h1">Our Skills</h2>
+				<div class="row">
+					<!--Start Porgress Skills-->
+					<div class="col-md-5">
+						<div class="skills-progress">
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">HTML5 / CSS3</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">PHP / MYSQL</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-warning " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">Javascript / JQuery</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">Wordpress</div>
+							</div>
+						</div>
+					</div>
+					<!--End Porgress Skills-->
+
+					<!--Start Team info-->
+					<div class="col-md-6 col-md-offset-1">
+						<div class="skills-info">
+							<h3>About The Team</h3>
+							<p class="lead">We are Specialized designing and programming team fashionate about design and creating digital ideas .We will transfer your idea to a digital dream and make your wish come true</p>
+							<button class="btn btn-primary" type="button">Talk with professional</button>
+						</div>
+					</div>
+					<!--End Team info-->
+				</div>
+			</div>
+		</section>
+		<!--End Skills Section-->
+
+		<!--Start Contact Us-->
+		<section class="contact-us text-center">
+			<div class="fields">
+				<div class="container">
+					<div class="row">
+						<i class="fa fa-headphones fa-5x"></i>
+						<h2 class="h1">Tell Us What you Feel</h2>
+						<p class="lead">Feel free to contact us anytime</p>
+						<!--Start Contact Form-->
+						<form role="form">
+							<div class="col-lg-6 col-md-6 wow fadeInLeft" data-wow-duration="1s"  data-wow-offset="200">
+								<div class="form-group">
+									<input type="text" name="username" class="form-control input-lg" placeholder="username">
+								</div>
+								<div class="form-group">
+									<input type="email" name="username" class="form-control input-lg" placeholder="email">
+								</div>
+								<div class="form-group">
+									<input type="number" name="username" class="form-control input-lg" placeholder="cell phone">
+								</div>
+								</div>
+							<div class="col-lg-6 col-md-6 wow bounceInRight" data-wow-duration="1s"  data-wow-offset="200">
+								<div class="form-group">
+									<textarea class="form-control input-lg" placeholder="Your Message"></textarea>
+									<button type="button" class="btn btn-danger btn-lg btn-block">Contact Us</button>
+								</div>
+							</div>	
+						</form>
+						<!--End Contact Form-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Contact Us-->
+
+		<!--Start Our Clients-->
+		<div class="our-clients">
+			<div class="container">
+				<div class="row">
+					<ul class="list-unstyled">
+						<li class="col-lg-2 col-md-2 col-sm-4">
+							<img src="assets/img/Our_Clients/bbc.png" alt="BBC" class="img-responsive center-block wow bounceIn" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay=".5s">
+						</li>
+						<li class="col-lg-2 col-md-2 col-sm-4">
+							<img src="assets/img/Our_Clients/cnn.png" alt="CNN" class="img-responsive center-block wow bounceIn" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="1s">
+						</li>
+						<li class="col-lg-2 col-md-2 col-sm-4">
+							<img src="assets/img/Our_Clients/forbes.png" alt="Forbes" class="img-responsive center-block wow bounceIn" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="1.5s">
+						</li>
+						<li class="col-lg-2 col-md-2 col-sm-4">
+							<img src="assets/img/Our_Clients/wired.png" alt="Wired" class="img-responsive center-block wow bounceIn" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="2s">
+						</li>
+						<li class="col-lg-2 col-md-2 col-sm-4">
+							<img src="assets/img/Our_Clients/wsj.png" alt="WSJ" class="img-responsive center-block wow bounceIn" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="2.5s">
+						</li>
+						<li class="col-lg-2 col-md-2 col-sm-4">
+							<img src="assets/img/Our_Clients/techradar.png" alt="Techradar" class="img-responsive center-block wow bounceIn" data-wow-duration=".5s" data-wow-offset="200" data-wow-delay="3s">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--End Our Clients-->
+
+
+		<!--Start Section Footer-->
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<h3>Sitemap</h3>
+						<ul class="list-unstyled three-columns">
+							<li>Home</li>
+							<li>About</li>
+							<li>Company</li>
+							<li>Code</li>
+							<li>Design</li>
+							<li>Host</li>
+							<li>Solutions</li>
+							<li>Sitemap</li>
+							<li>Contact</li>
+						</ul>
+						<ul class="list-unstyled social-list">
+							<li><img src="assets/img/Bookmark/facebook.png" alt="Facebook"></li>
+							<li><img src="assets/img/Bookmark/gplus.png" alt="Google Plus"></li>
+							<li><img src="assets/img/Bookmark/twitter.png" alt="Twitter"></li>
+							<li><img src="assets/img/Bookmark/pinterest.png" alt="Pinterest"></li>
+							<li><img src="assets/img/Bookmark/rss.png" alt="RSS"></li>
+							<li><img src="assets/img/Bookmark/email.png" alt="Email"></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6">
+						<h3>Latest Article</h3>
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img src="assets/img/article/01.jpg" width="64" height="64" alt="Image 1" class="media-object">
+							</a>
+							<div class="media-body">
+									<h4 class="media-heading">Programming</h4>
+									This is some text about programming describe the media of bootstrap 3.2.0
+							</div>
+						</div>
+
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img src="assets/img/article/02.jpg" width="64" height="64" alt="Image 2" class="media-object">
+							</a>
+							<div class="media-body">
+									<h4 class="media-heading">Coding</h4>
+									This is some text about programming describe the media of bootstrap 3.2.0
+							</div>
+						</div>
+
+						<div class="media">
+							<a href="#" class="pull-left">
+								<img src="assets/img/article/03.jpg" width="64" height="64" alt="Image 3" class="media-object">
+							</a>
+							<div class="media-body">
+									<h4 class="media-heading">Web Design</h4>
+									This is some text about programming describe the media of bootstrap 3.2.0
+							</div>
+						</div>
+
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<h3>Our Awesome Work</h3>
+						<img src="assets/img/Work/01 (1).jpg" alt="image 01" class="img-thumbnail">
+						<img src="assets/img/Work/02.jpg" alt="image 02" class="img-thumbnail">
+						<img src="assets/img/Work/03.jpg" alt="image 03" class="img-thumbnail">
+						<img src="assets/img/Work/04.jpg" alt="image 04" class="img-thumbnail">
+					</div>
+				</div>
+			</div>
+			<div class="copyright text-center">
+					Copyright &copy; 2014 <span>Your template name</span> Inc.
+			</div>
+		</section>
+		<!--End Section Footer-->
+
+		
+		<!--Start Section Loading-->
+		<div class="loading-overlay">
+			<!--<h1>This website is loading now </h1>-->
+			<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+		</div>
+		<!--End Section Loading-->
+
+		<!--Start Scroll to top-->
+		<div id="scroll-top">
+			<i class="fa fa-chevron-up fa-3x"></i>
+		</div>
+		<!--End Scroll to top-->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+		<!--all plugins in bootstrap javascript will not work without it-->
+		<script type="text/javascript" src="assets/js/plugins.js"></script>
+		<script type="text/javascript" src="assets/js/wow.min.js"></script>
+        <script>
+        	new WOW().init();
+        </script>
+	</body>
+</html>
